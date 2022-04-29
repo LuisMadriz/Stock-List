@@ -15,6 +15,7 @@
 		03241D132817387400E6DA69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03241D112817387400E6DA69 /* LaunchScreen.storyboard */; };
 		03241D1D281741CF00E6DA69 /* StockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03241D1C281741CF00E6DA69 /* StockCell.swift */; };
 		03241D1F281745F200E6DA69 /* StockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03241D1E281745F200E6DA69 /* StockData.swift */; };
+		03C26CC3281C424F002818D8 /* KeyMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C26CC2281C424F002818D8 /* KeyMetrics.swift */; };
 		03C67D5E281AE21200480213 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C67D5D281AE21200480213 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		03241D142817387400E6DA69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03241D1C281741CF00E6DA69 /* StockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockCell.swift; sourceTree = "<group>"; };
 		03241D1E281745F200E6DA69 /* StockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockData.swift; sourceTree = "<group>"; };
+		03C26CC2281C424F002818D8 /* KeyMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyMetrics.swift; sourceTree = "<group>"; };
 		03C67D5D281AE21200480213 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +71,7 @@
 				03C67D5D281AE21200480213 /* DetailViewController.swift */,
 				03241D1E281745F200E6DA69 /* StockData.swift */,
 				03241D0C2817387200E6DA69 /* Main.storyboard */,
+				03C26CC2281C424F002818D8 /* KeyMetrics.swift */,
 				03241D0F2817387400E6DA69 /* Assets.xcassets */,
 				03241D112817387400E6DA69 /* LaunchScreen.storyboard */,
 				03241D142817387400E6DA69 /* Info.plist */,
@@ -152,6 +155,7 @@
 				03241D1D281741CF00E6DA69 /* StockCell.swift in Sources */,
 				03C67D5E281AE21200480213 /* DetailViewController.swift in Sources */,
 				03241D1F281745F200E6DA69 /* StockData.swift in Sources */,
+				03C26CC3281C424F002818D8 /* KeyMetrics.swift in Sources */,
 				03241D092817387200E6DA69 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
