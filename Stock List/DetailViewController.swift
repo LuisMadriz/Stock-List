@@ -33,7 +33,7 @@ class DetailViewController: UIViewController {
     
     
     @IBAction func onClickMetrics(_ sender: Any) {
-        
+        print("Holaaaaaa!!!!!")
     }
     
 
