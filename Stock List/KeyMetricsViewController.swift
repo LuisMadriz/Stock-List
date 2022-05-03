@@ -9,7 +9,10 @@ import UIKit
 
 class KeyMetricsViewController: UIViewController {
     
-    let url = URL(string: "https://financialmodelingprep.com/api/v3/ratios/AAPL?apikey=087de735c76deedab08e815ecbb5edce")
+    
+    var symbolName: String?
+    
+    var url: URL?
     
     private var metrics : KeyMetrics?
     
@@ -23,10 +26,23 @@ class KeyMetricsViewController: UIViewController {
     @IBOutlet var PEGRLabel: UILabel!
     @IBOutlet var debtRatioLabel: UILabel!
     
+    init?(symbolName: String?, coder: NSCoder) {
+        if let symbolName = symbolName {
+            self.symbolName = symbolName
+        }
+       
+        super.init(coder: coder)
+    }
     
-
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let symbolName = symbolName {
+            url = URL(string: "https://financialmodelingprep.com/api/v3/ratios/\(symbolName)?apikey=087de735c76deedab08e815ecbb5edce")
+        }
         
         downloadJson2()
         
@@ -53,11 +69,11 @@ class KeyMetricsViewController: UIViewController {
                 DispatchQueue.main.async {
                     self.symbolLabel.text = metrics.symbol
                     self.dateLabel.text = metrics.date
-                    self.ROALabel.text = "\(metrics.returnOnAssets)"
-                    self.ROELabel.text = "\(metrics.returnOnEquity)"
-                    self.PERLabel.text = "\(metrics.priceEarningsRatio)"
-                    self.PEGRLabel.text = "\(metrics.priceEarningsToGrowthRatio)"
-                    self.debtRatioLabel.text = "\(metrics.debtRatio)"
+                    self.ROALabel.text = "ROA: \(metrics.returnOnAssets)"
+                    self.ROELabel.text = "ROE: \(metrics.returnOnEquity)"
+                    self.PERLabel.text = "PER: \(metrics.priceEarningsRatio)"
+                    self.PEGRLabel.text = "PEGR: \(metrics.priceEarningsToGrowthRatio)"
+                    self.debtRatioLabel.text = "Debt Ratio: \(metrics.debtRatio)"
                 }
                 
                 
@@ -69,3 +85,6 @@ class KeyMetricsViewController: UIViewController {
     }
     
 }
+
+
+//let url = URL(string: "https://financialmodelingprep.com/api/v3/ratios/AAPL?apikey=087de735c76deedab08e815ecbb5edce")

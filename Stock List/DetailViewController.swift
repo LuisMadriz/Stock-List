@@ -35,6 +35,10 @@ class DetailViewController: UIViewController {
     @IBAction func onClickMetrics(_ sender: Any) {
         print("Holaaaaaa!!!!!")
     }
+    @IBSegueAction func segueToKeyMetrics(_ coder: NSCoder) -> KeyMetricsViewController? {
+        let vc = KeyMetricsViewController(symbolName: stock?.symbol, coder: coder)
+        return vc
+    }
     
 
 }

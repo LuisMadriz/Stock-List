@@ -145,7 +145,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="onClickMetrics:" destination="745-lj-8ln" eventType="touchUpInside" id="S90-Jb-fSR"/>
-                                    <segue destination="k20-il-IP3" kind="show" identifier="detailToKeyMetric" id="Out-wr-gWc"/>
+                                    <segue destination="k20-il-IP3" kind="show" identifier="detailToKeyMetric" destinationCreationSelector="segueToKeyMetrics:" id="Out-wr-gWc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -193,7 +193,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFk-zY-eIw">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="20.333333333333332"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -233,10 +233,10 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHD-bI-Zna">
-                                <rect key="frame" x="107" y="108" width="200" height="60"/>
+                                <rect key="frame" x="107" y="154" width="200" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>

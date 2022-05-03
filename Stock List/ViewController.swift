@@ -96,4 +96,4 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
 }
 
-// Jueves: se realizo la detail view, ahora se necesita pasar los datos a las labels del DetailView.
+
