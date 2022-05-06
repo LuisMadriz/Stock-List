@@ -46,8 +46,6 @@ class KeyMetricsViewController: UIViewController {
         
         downloadJson2()
         
-        
-
     }
     
     func downloadJson2() {

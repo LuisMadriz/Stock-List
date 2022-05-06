@@ -16,17 +16,23 @@ class DetailViewController: UIViewController {
     @IBOutlet var ExchangeLabel: UILabel!
     @IBOutlet var TypeLabel: UILabel!
     
+    
     var stock: StockList? 
 
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tickerLabel.text = stock?.symbol
-        Namelabel.text = stock?.name
-        PriceLabel.text = stock?.price.formatted()
-        ExchangeLabel.text = stock?.exchange
-        TypeLabel.text = stock?.type
+        guard let stock = stock else {
+            return
+        }
+
+        tickerLabel.text = stock.symbol
+        Namelabel.text = stock.name
+        //PriceLabel.text = stock?.price.formatted()
+        PriceLabel.text = currencyFormatter(number: stock.price)
+        ExchangeLabel.text = stock.exchange
+        TypeLabel.text = stock.type
     }
     
 
@@ -40,5 +46,11 @@ class DetailViewController: UIViewController {
         return vc
     }
     
+    func currencyFormatter(number: Double) -> String {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .currency
+        
+        return numberFormatter.string(from: NSNumber(value: number)) ?? "N/A"
+    }
 
 }
