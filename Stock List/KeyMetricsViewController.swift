@@ -67,11 +67,11 @@ class KeyMetricsViewController: UIViewController {
                 DispatchQueue.main.async {
                     self.symbolLabel.text = metrics.symbol
                     self.dateLabel.text = metrics.date
-                    self.ROALabel.text = "ROA: \(metrics.returnOnAssets)"
-                    self.ROELabel.text = "ROE: \(metrics.returnOnEquity)"
-                    self.PERLabel.text = "PER: \(metrics.priceEarningsRatio)"
-                    self.PEGRLabel.text = "PEGR: \(metrics.priceEarningsToGrowthRatio)"
-                    self.debtRatioLabel.text = "Debt Ratio: \(metrics.debtRatio)"
+                    self.ROALabel.text = "ROA: \(metrics.returnOnAssets.formatted(.number))"
+                    self.ROELabel.text = "ROE: \(metrics.returnOnEquity.formatted(.number))"
+                    self.PERLabel.text = "PER: \(metrics.priceEarningsRatio.formatted(.number))"
+                    self.PEGRLabel.text = "PEGR: \(metrics.priceEarningsToGrowthRatio.formatted(.number))"
+                    self.debtRatioLabel.text = "Debt Ratio: \(metrics.debtRatio.formatted(.number))"
                 }
                 
                 
@@ -81,6 +81,8 @@ class KeyMetricsViewController: UIViewController {
         }.resume()
         
     }
+    
+    
     
 }
 
