@@ -71,7 +71,7 @@ class KeyMetricsViewController: UIViewController {
                     self.ROELabel.text = "ROE: \(metrics.returnOnEquity.formatted(.number))"
                     self.PERLabel.text = "PER: \(metrics.priceEarningsRatio.formatted(.number))"
                     self.PEGRLabel.text = "PEGR: \(metrics.priceEarningsToGrowthRatio.formatted(.number))"
-                    self.debtRatioLabel.text = "Debt Ratio: \(metrics.debtRatio.formatted(.number))"
+                    self.debtRatioLabel.text = "Debt Rt: \(metrics.debtRatio.formatted(.number))"
                 }
                 
                 
